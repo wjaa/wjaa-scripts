@@ -1,0 +1,5 @@
+"C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0 - F\bin\tomcat6.exe" //IS//Tomcat6F --DisplayName="Apache Tomcat 6 - F" --Install="C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0 - F\bin\tomcat6" --Jvm=auto --StartMode=jvm --StopMode=jvm --StartClass=org.apache.catalina.startup.Bootstrap --StartParams=start --StopClass=org.apache.catalina.startup.Bootstrap --StopParams=stop --Description="Apache Tomcat Server - http://tomcat.apache.org"
+
+"C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0 - F\bin\tomcat6.exe" //US//Tomcat6F --Description="Apache Tomcat Server - http://tomcat.apache.org/ " --Startup=auto --Classpath=%JAVA_HOME%\lib\tools.jar;%CATALINA_HOME%\bin\bootstrap.jar
+
+"C:\Program Files (x86)\Apache Software Foundation\Tomcat 6.0 - F\bin\tomcat6" //TS//Tomcat6F
