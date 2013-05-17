@@ -1,0 +1,56 @@
+body{
+	margin:10px 15px;
+	font: 12px Arial, Helvetica, sans-serif;
+	background:#F0F0F0;
+	text-align:center;
+	}
+#tudo {
+	width:100%;
+	text-align:left;
+	margin:0 auto;
+	}
+#principal {
+
+	width:80%;	
+	height:100%;
+	background-color:#999;
+	float:right;
+	}
+#menu {
+	width:20%;
+	height:100%;
+	background-color:#F0F0F0;
+	float:left;
+	}
+#principal * {
+	padding: -5px 5px -5px 5px;
+}
+
+
+#menu p{
+
+	valign:center;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	font-family:menu;
+	font-size:18px;
+	color:#F4811E;
+	font-weight:bold;
+
+}
+
+a:hover {
+	text-decoration: underline;
+	color: #F4811E !important;
+}
+
+a:active {
+	text-decoration: none
+}
+
+#topo{
+	background-color:#2e3092;
+	color:#fff;
+}

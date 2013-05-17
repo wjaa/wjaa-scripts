@@ -1,0 +1,83 @@
+<html>
+
+	
+	<head>
+		<script type="text/javascript" language="javascript" src='js/jquery-1.9.1.min.js'></script>
+		<script type="text/javascript" language="javascript" src='js/jquery.treeview.js'></script>
+		<link rel="stylesheet" type="text/css" href="css/style.css" media="all">
+		<link rel="stylesheet" type="text/css" href="css/jquery.treeview.css" />
+		<title> Firewall Manager Coelho </title>
+	</head>
+	<body>
+		<div id="tudo">
+			<nav id="topo" role="navigation">
+    				<div class="primary">
+				        <h1 id="logo"><img src="img/Logo BTU BRASPRESS.png" alt="Jira"></h1>
+				</div>
+			
+			</nav>
+			<div id="principal">
+				<iframe id="iframeServer" frameborder="no"  width="100%" height="100%" ></iframe>
+			
+			</div>
+			<div id="menu" style="overflow: auto;">
+			</div>
+		</div>
+
+	</body>
+
+	
+</html>
+<script>
+
+
+	
+	function initCoelho(){
+		$.ajax({
+			  url: "coelho.json",
+			  type: "get",
+			  dataType: "json",
+			  error: function data(data){
+				alert("Arquivo 'coelho.json', nao foi configuado corretamento");
+			  },	
+			  success: function( data ) {
+				var html = "<ul id='tree' class='filetree'>";
+				
+	      		for (var i = 0; i < data.servers.length; i++ ){
+ 					html += "<li><span class='folder'>" + data.servers[i].filial + "</span>";
+	      			for (var j = 0; j < data.servers[i].maquinas.length; j++){
+	      				html += "<ul>";
+	      				var url = '"' + data.servers[i].maquinas[j].url + '"';
+	      				var link = "";
+	      				link += "<a href='#' onclick='changeServer("+ url + ");'>";
+						link += data.servers[i].maquinas[j].name;
+						link += '</a>';
+						html += "<li><span class='file'>" + link + "</span></li>";
+						html += "</ul>";
+	      			}
+ 					html += "</li>";	
+				}  
+					
+				$("#menu").html(html + "</ul>");
+
+				$("#tree").treeview({
+						animated: "fast",
+						collapsed: true});
+				
+
+			}
+			
+		});
+
+		
+
+	}	
+
+	function changeServer(url){
+		$("#iframeServer").attr("src", url);
+	}
+
+	initCoelho();
+</script>
+
+

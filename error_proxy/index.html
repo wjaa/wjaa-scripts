@@ -1,0 +1,126 @@
+<html>
+	<head>
+			<link rel="stylesheet" type="text/css" href="style.css" media="all">
+	</head>
+	<body>
+		<center>
+		<nav id="topo" role="navigation">
+    			<div class="primary">
+				     <h1 id="logo"><img src="Logo BTU BRASPRESS.png" alt="Jira"></h1>
+				</div>
+			
+			</nav>	
+		</center>	
+		<div id="body">
+
+			
+			<center>
+			<div id="bodyInfo">
+
+				<div id="message" style="float:left;">
+					<img src="ad.jpg">
+				</div>
+				
+				<div id="info" style="float:left;">
+					<table id="tableInfo">
+						<tr>
+							<td id="tit">
+								<b> IP: </b> 
+							</td>
+							<td id="ip">	
+								192.168.0.1
+							</td>
+						<tr>	
+						<tr>
+							<td id="tit">
+								<b> Nome: </b> 
+							</td>
+							<td id="nome">	
+								Wagner Araujo
+							</td>
+						<tr>	
+						<tr>
+							<td id="tit">
+								<b> Usu&aacute;rio: </b> 
+							</td >
+							<td id="usuario">	
+								wagneraraujo-sao
+							</td>
+						<tr>	
+						<tr>
+							<td id="tit">
+								<b> Grupo: </b> 
+							</td>
+							<td id="grupo">	
+								GrupoX
+							</td>
+						<tr>	
+						<tr>
+							<td id="tit">
+								<b> Categoria: </b> 
+							</td>
+							<td id="categoria">	
+								YYYYYYYY
+							</td>
+						<tr>	
+						<tr>
+							<td id="tit">
+								<b> URL: </b> 
+							</td>
+							<td width="310px" id="url">	
+								http://youtube.com/jkfdlsjfksadj/fdsafsad
+							</td>
+						</tr>
+					</table>					
+	        	</div>	
+	        	 <div id="rodape">	
+		        	Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+					It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using.
+		        </div>
+	        </div>
+
+	        </center>
+
+
+		</div>		
+
+
+
+
+	</body>
+</html>
+<script>
+
+	function onload(){
+		var ip = getParam("a");
+		var nome = getParam("n");
+		var usuario = getParam("i");
+		var grupo = getParam("s");
+		var categoria = getParam("t");
+		var url = getParam("u");
+
+		document.getElementById("ip").innerHTML = ip;
+		document.getElementById("nome").innerHTML = nome;
+		document.getElementById("usuario").innerHTML = usuario;
+		document.getElementById("grupo").innerHTML = grupo;
+		document.getElementById("categoria").innerHTML = categoria;
+		document.getElementById("url").innerHTML = url;
+	}
+
+
+	function getParam(name) {
+  		var regexS = "[\\?&]"+name+"=([^&#]*)";
+  		var regex = new RegExp( regexS );
+  		var tmpURL = window.location.href;
+  		var results = regex.exec( tmpURL );
+  		if( results == null )
+    		return "";
+  		else
+    		return results[1];
+	}
+
+
+
+	onload();
+</script>

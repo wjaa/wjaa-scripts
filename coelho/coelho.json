@@ -1,0 +1,19 @@
+{"servers":[
+	{"filial":"SAO","maquinas": [
+		{"name":"Proxy", "url":"http://171.100.10.15"},
+		{"name":"Firewall", "url":"http://171.100.10.15"}
+	]},
+        {"filial":"MAO","maquinas": [
+                {"name":"Proxy", "url":"https://172.21.155.1:10443"},
+                {"name":"Firewall", "url":"https://172.21.155.1:10443"}
+        ]},
+        {"filial":"BTB","maquinas": [
+                {"name":"Proxy", "url":"https://172.21.163.1:10443"},
+                {"name":"Firewall", "url":"https://172.21.163.1:10443"}
+        ]},
+        {"filial":"UGD","maquinas": [
+                {"name":"Proxy", "url":"https://172.21.68.1:10443"},
+                {"name":"Firewall", "url":"https://172.21.68.1:10443"}
+        ]}
+]}
+

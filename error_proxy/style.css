@@ -1,0 +1,61 @@
+body{
+	text-align:center;
+	margin-top: -18px
+}
+
+#body {
+	margin-top: 10px;	
+
+}
+
+#topo{
+	background-color:#2e3092;
+	color:#fff;
+	margin: -5px;
+	width: 990px;
+}
+
+#info{
+	vertical-align: middle;
+	text-align: left;
+	height: 200px;
+	margin-top: 50;
+	margin-left: 20;
+	padding: 10;
+	border: 1px solid #A0A0A0 ;
+	box-shadow: #636363 0.2em 0.2em 0.3em;
+	background-color: #F0EFF2;
+	
+}
+
+
+#tableInfo {
+	font-family: Arial,Helvetica,sans;
+	font-size: 14px;
+}
+
+#info b {
+	font-family: sans-serif;
+	font-size: 18px ;
+}
+
+#bodyInfo{
+	width: 960px;
+	height: 500px;
+	padding: 10px;
+	border: 1px solid #A0A0A0 ;
+	box-shadow: #636363 0.5em 0.5em 0.3em 
+}
+
+#tableInfo #tit{
+	text-align: right;
+}
+
+#rodape{
+	width: 960px;
+	height: 100px;
+	margin-top: 350px;
+	font-family: Arial,Helvetica,sans;
+}
+
+
