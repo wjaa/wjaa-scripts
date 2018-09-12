@@ -9,7 +9,7 @@ if [ -f "$path" ]; then
     echo "Removendo o container e a imagem anterior"
     docker rmi mpr/ws && sudo docker rm -f mpr-ws_be_1
     echo "Gerando nova imagem"
-    docker build .
+    docker build -t mpr/ws .
     echo "Gerando container"
     docker-compose up -d 
     echo "FIM DO BUILD"
